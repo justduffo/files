@@ -1,43 +1,43 @@
-SELECT * 
+1. SELECT * 
 
 FROM GescandeData; 
-
+-----------------------
  
 
-SELECT Kenteken, Merk 
+2. SELECT Kenteken, Merk 
 
 FROM GescandeData; 
-
+---------------------
  
 
-SELECT Kenteken, Cilinderinhoud  
+3. SELECT Kenteken, Cilinderinhoud  
 
 FROM RDW  
 
 WHERE Cilinderinhoud > 2000; 
 
- 
+------------------------------------- 
 
-SELECT Kenteken, Merk 
+4. SELECT Kenteken, Merk 
 
 FROM GescandeData 
 
 WHERE Kenteken NOT IN (SELECT Kenteken FROM RDW); 
 
- 
+-------------------------------------- 
 
-INSERT INTO GescandeData (Kenteken, Merk, Handelsbenaming) 
+5. INSERT INTO GescandeData (Kenteken, Merk, Handelsbenaming) 
 
 VALUES ('1szn01', 'Suzuki', 'Alto Scantest'); 
 
- 
+ ---------------------------------------
 
-SELECT Kenteken, Merk 
+6. SELECT Kenteken, Merk 
 
 FROM RDW 
 
 WHERE Cilinderinhoud > AVG(Cilinderinhoud); 
 
- 
+ ---------------------------------------
 
  
