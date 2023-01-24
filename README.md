@@ -1,12 +1,14 @@
 1. SELECT * 
 
 FROM GescandeData; 
+
 -----------------------
  
 
 2. SELECT Kenteken, Merk 
 
 FROM GescandeData; 
+
 ---------------------
  
 
